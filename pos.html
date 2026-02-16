@@ -16,20 +16,21 @@
 <body class="pos-page">
 
     <nav class="pos-nav">
-        <Div id="pos-nav">
+        <div class="nav-left">
             <button onclick="goToPage('sales.html')">Sales</button>
             <button onclick="goToPage('inventory.html')">Inventory</button>
             <button onclick="goToPage('reports.html')">Reports</button>
             <button onclick="goToPage('settings.html')">Settings</button>
-        </Div>
-        <br>
-        <button class="logout-btn" onclick="goToPage('login.html')">
-            <i class="fa-solid fa-right-from-bracket"></i>
-            <span>Log Out</span>
-        </button>
         </div>
 
+        <div class="nav-right">
+            <button class="logout-btn" onclick="goToPage('login.html')">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Log Out</span>
+            </button>
+        </div>
     </nav>
+
 
     <div class="content">
         <h1>Welcome to POS Dashboard</h1>
