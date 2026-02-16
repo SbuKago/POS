@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "open login page",
+            "type": "process",
+            "command": "explorer", // Use "open" for macOS or "xdg-open" for Linux
+            "windows": {
+                "command": "explorer.exe"
+            },
+            "args": [
+                "login.html"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
