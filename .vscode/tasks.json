@@ -3,18 +3,21 @@
     "tasks": [
         {
             "label": "open login page",
-            "type": "process",
-            "command": "explorer", // Use "open" for macOS or "xdg-open" for Linux
+            "type": "shell",
             "windows": {
-                "command": "explorer.exe"
+                "command": "start login.html"
             },
-            "args": [
-                "login.html"
-            ],
+            "osx": {
+                "command": "open login.html"
+            },
+            "linux": {
+                "command": "xdg-open login.html"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
         }
     ]
 }
