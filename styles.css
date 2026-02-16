@@ -1,0 +1,168 @@
+/* ---------- LOGIN PAGE STYLES ---------- */
+body.login-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #111, #333);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page .signin {
+    background: #fff;
+    padding: 35px;
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-page .signin h1 {
+    margin-bottom: 20px;
+}
+
+.login-page .input-box {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.login-page .input-box i {
+    margin-right: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.login-page .input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+.login-page .input-box:focus-within {
+    border-color: #000;
+}
+
+.login-page #signinbtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-page #signinbtn:hover {
+    background: #444;
+}
+
+/* ---------- POS PAGE STYLES ---------- */
+body.pos-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+/* POS Navigation Bar */
+.pos-page .pos-nav {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.pos-page .pos-nav button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: ease-in-out 0.3s;
+}
+
+.pos-page .pos-nav button:hover {
+    background-color: #4c72c3;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* Default: show icon, hide text */
+.logout-btn i {
+    display: inline-block;
+    /* icon visible by default */
+    transition: all 0.5s;
+}
+
+.logout-btn span {
+    display: none;
+    /* text hidden by default */
+    transition: all 0.5s;
+}
+
+/* On hover: hide icon, show text */
+.logout-btn:hover i {
+    display: none;
+}
+
+.logout-btn:hover span {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    /* optional: make text red on hover */
+}
+
+
+/* Main Content Area */
+.pos-page .content {
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+    /* Adjust for nav height */
+
+    background-image: url();
+}
+
+/* Headings */
+.pos-page .content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Paragraph */
+.pos-page .content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Optional: active nav button highlight */
+.pos-page .pos-nav button.active {
+    background-color: #007bff;
+    color: #fff;
+}

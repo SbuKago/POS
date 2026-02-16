@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="pos-page">
+
+    <nav class="pos-nav">
+        <Div id="pos-nav">
+            <button onclick="goToPage('sales.html')">Sales</button>
+            <button onclick="goToPage('inventory.html')">Inventory</button>
+            <button onclick="goToPage('reports.html')">Reports</button>
+            <button onclick="goToPage('settings.html')">Settings</button>
+        </Div>
+        <br>
+        <button class="logout-btn" onclick="goToPage('login.html')">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Log Out</span>
+        </button>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to POS Dashboard</h1>
+        <p>Select a section to start.</p>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>
