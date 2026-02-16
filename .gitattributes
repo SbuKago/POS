@@ -2,3 +2,4 @@
 * text=auto
 git add --renormalize .
 git commit -m "Normalize all the line endings"
+git config --global core.autocrlf true
