@@ -69,6 +69,7 @@ body.login-page {
 }
 
 /* ---------- POS PAGE STYLES ---------- */
+/* ---------- POS PAGE STYLES ---------- */
 body.pos-page {
     margin: 0;
     padding: 0;
@@ -78,34 +79,39 @@ body.pos-page {
 
 /* POS Navigation Bar */
 .pos-page .pos-nav {
+    display: flex;
+    justify-content: space-between;
+    /* left nav and right logout */
+    align-items: center;
     background-color: #222;
     padding: 10px 20px;
-    display: flex;
-    gap: 15px;
 }
 
-.pos-page .pos-nav button {
+/* Left nav buttons */
+.pos-page .pos-nav .nav-left button {
     background-color: #444;
     color: #fff;
     border: none;
     padding: 10px 15px;
+    margin-right: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
     transition: ease-in-out 0.3s;
 }
 
-.pos-page .pos-nav button:hover {
+.pos-page .pos-nav .nav-left button:hover {
     background-color: #4c72c3;
 }
 
-.logout-btn {
+/* Right logout button container */
+.pos-page .pos-nav .nav-right .logout-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     background-color: #fff;
     color: black;
@@ -114,37 +120,35 @@ body.pos-page {
     transition: all 0.5s;
 }
 
-/* Default: show icon, hide text */
-.logout-btn i {
+/* Logout icon and text behavior */
+.pos-page .pos-nav .nav-right .logout-btn i {
     display: inline-block;
     /* icon visible by default */
     transition: all 0.5s;
 }
 
-.logout-btn span {
+.pos-page .pos-nav .nav-right .logout-btn span {
     display: none;
     /* text hidden by default */
     transition: all 0.5s;
 }
 
-/* On hover: hide icon, show text */
-.logout-btn:hover i {
+.pos-page .pos-nav .nav-right .logout-btn:hover i {
     display: none;
+    /* hide icon on hover */
 }
 
-.logout-btn:hover span {
+.pos-page .pos-nav .nav-right .logout-btn:hover span {
     display: inline-block;
-    color: rgb(255, 255, 255);
-    /* optional: make text red on hover */
+    /* show text on hover */
+    color: rgb(255, 0, 0);
 }
-
 
 /* Main Content Area */
 .pos-page .content {
     padding: 20px;
     min-height: calc(100vh - 60px);
     /* Adjust for nav height */
-
     background-image: url();
 }
 
@@ -162,7 +166,7 @@ body.pos-page {
 }
 
 /* Optional: active nav button highlight */
-.pos-page .pos-nav button.active {
+.pos-page .pos-nav .nav-left button.active {
     background-color: #007bff;
     color: #fff;
 }
